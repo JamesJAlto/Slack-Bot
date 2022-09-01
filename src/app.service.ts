@@ -125,7 +125,7 @@ export class AppService {
     const messageBody = `${title}\n\`\`\`\n${JSON.stringify(params, null, 2)}\n\`\`\``;
     if (!slackWebHook) {
       console.info("It seems you haven't defined a SLACK_DEBUG_HOOK environnement variable. Create a slack hook and set it to be able to have debug messages in a custom slack channel.");
-      console.error('[sendDebugMessageToSlack] Something happens', messageBody);
+      console.error('[sendDebugMessageToSlack] Something happened', messageBody);
       return;
     }
     superagent
