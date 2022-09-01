@@ -197,7 +197,7 @@ export class AppService {
         type: 'section',
         text: {
           type: 'mrkdwn',
-          text: `*<@${userId}> just created a meet* :tada: ${text ?? ''}`,
+          text: `*<@${userId}> just created a meet* :cut_of_meat: ${text ?? ''}`,
         },
       },
       {
@@ -206,15 +206,6 @@ export class AppService {
           type: 'mrkdwn',
           text: `:point_right: ${meetLink}`,
         },
-      },
-      {
-        type: 'context',
-        elements: [
-          {
-            type: 'mrkdwn',
-            text: `Access with other connected Google accounts <${meetLink}?authuser=0|:zero:> <${meetLink}?authuser=1|:one:> <${meetLink}?authuser=2|:two:> <${meetLink}?authuser=3|:three:>`,
-          },
-        ],
       },
     ];
 
